@@ -1,6 +1,7 @@
-﻿namespace DesktopSprites.Core
+namespace DesktopSprites.Core
 {
     using System;
+    using System.ComponentModel;
     using System.Windows.Forms;
 
     /// <summary>
@@ -20,8 +21,8 @@
         /// </exception>
         public static bool TryInvoke(this Control control, Action action)
         {
-            Argument.EnsureNotNull(control, "control");
-            Argument.EnsureNotNull(action, "action");
+            Argument.EnsureNotNull(control, nameof(control));
+            Argument.EnsureNotNull(action, nameof(action));
             // When creating or recreating its handle, a control locks on itself. We'll lock on the control to prevent race conditions
             // where the handle is swapped out from under us whilst we are determining if we are in a cross-thread call or not. This is
             // required because InvokeRequired returns false if the handle has yet to be created, as well as if we are on the UI thread.
@@ -54,7 +55,7 @@
         {
             // On entering this method, we know implicitly the control has a valid window handle and a cross-thread call is required.
             IAsyncResult asyncResult;
-            bool invoked = false;
+            var invoked = false;
             try
             {
                 // We use BeginInvoke so we can get access to the wait handle being used. The normal Invoke also uses a wait handle whilst
@@ -90,6 +91,11 @@
                 // The control can be disposed before we are able to wait on the result. We can ignore this as we have our flag to see if
                 // the action was executed.
             }
+            catch (InvalidAsynchronousStateException)
+            {
+                // The thread may no longer be running by the time we wait on the result. We can ignore this as we have our flag to see if
+                // the action was executed.
+            }
             // Release the wait handle so it does not have to be finalized.
             asyncResult.AsyncWaitHandle.Dispose();
             // If we get this far, we know our wrapper method was executed but we need to use this flag in case we bailed from executing
@@ -106,7 +112,7 @@
         /// <exception cref="T:System.ArgumentNullException"><paramref name="control"/> is null.</exception>
         public static void EnableWaitCursor(this Control control, bool disable)
         {
-            Argument.EnsureNotNull(control, "control");
+            Argument.EnsureNotNull(control, nameof(control));
             // Mono is basically useless at doing this with any consistency - we'll only bother for native .NET on Windows.
             if (!OperatingSystemInfo.IsWindows || Runtime.IsMono)
                 return;

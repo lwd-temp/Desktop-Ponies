@@ -184,6 +184,9 @@ Contributors are broken down by character. If there was more than one contributo
 * Starly [Sleep]
 * Bot-chan [Idle, Bench]
 
+#### Bow Hothoof
+* Bot-chan
+
 #### Boxxy Brown
 * Bot-chan
 
@@ -332,9 +335,6 @@ Contributors are broken down by character. If there was more than one contributo
 #### Dr. Caballeron
 * Bot-chan
 
-#### Dude
-* Bot-chan
-
 #### Dumb-Bell
 * Bot-chan
 
@@ -396,7 +396,7 @@ Contributors are broken down by character. If there was more than one contributo
 #### Fluttershy (Filly)
 * PsychoShutin
 
-#### Fredrick Horeshoepin
+#### Frederic Horseshoepin
 * vulcan539
 
 #### Fresh Coat
@@ -456,6 +456,12 @@ Contributors are broken down by character. If there was more than one contributo
 
 #### Iron Will
 * StarStep
+
+#### Jasmine Leaf
+* Blaze5565
+
+#### Jeff Letrotski
+* Bot-chan
 
 #### Jesús Pezuña
 * Anonycat
@@ -630,6 +636,9 @@ Contributors are broken down by character. If there was more than one contributo
 #### Nursery Rhyme
 * Bot-chan
 
+#### Ocellus
+* Bot-chan
+
 #### Octavia
 * RJP!
 
@@ -647,6 +656,9 @@ Contributors are broken down by character. If there was more than one contributo
 
 #### Party Favor
 * Bot-chan
+
+#### Pear Butter
+* emeralddarkness
 
 #### Perfect Pace
 * Anonycat
@@ -694,10 +706,10 @@ Contributors are broken down by character. If there was more than one contributo
 #### PP Hum Drum
 * Bot-chan
 
-#### PP Masked Matterhorn
+#### PP Masked Matter-Horn
 * Bot-chan
 
-#### PP Mistress Marevelous
+#### PP Mistress Mare-velous
 * Bot-chan
 
 #### PP Radiance
@@ -895,6 +907,9 @@ Contributors are broken down by character. If there was more than one contributo
 #### Slendermane
 * Bot-chan
 
+#### Smolder
+* Bot-chan
+
 #### Smooze
 * Bot-chan
 
@@ -924,6 +939,9 @@ Contributors are broken down by character. If there was more than one contributo
 #### Sparkler
 * vulcan539 [Stand, Walk, Jump, Sit, Sleep, Stand]
 * Images modified from Lyra.
+
+#### Sphinx
+* Bot-chan
 
 #### Spike
 * Peter Kurucz (Fantos) [Idle, Run]
@@ -990,9 +1008,6 @@ Contributors are broken down by character. If there was more than one contributo
 
 #### Tank
 * Bot-chan
-
-#### Tea Shop Pony
-* Blaze5565
 
 #### Tealove
 * Bot-chan
